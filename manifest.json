@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Motivational Newsfeed",
+	"version": "0.1",
+	"description": "Motivational facebook news feed with brilliant Shia LaBeouf quotes.",
+	"content_scripts": [
+		{
+			"matches": ["*://*.facebook.com/*"],
+			"js": ["jquery.js", "eradicate.js"],
+			"css": ["eradicate.css"],
+			"run_at": "document_idle"
+		}
+	],
+	"permissions": [
+		"tabs",
+    	"*://*.facebook.com/*"
+	],
+	"web_accessible_resources": ["shia.png"]
+}

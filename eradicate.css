@@ -1,0 +1,35 @@
+.shia-quote
+{
+    font-size: 24px;
+}
+
+.shia-quote-text
+{
+    color: #000;
+    border-left: 4px solid #99f;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.shia-quote-source
+{
+    color: #999;
+}
+
+.shia-quote-img
+{
+	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, 0%);
+}
+
+/* This hides the news feed before the JS kicks in */
+#pagelet_home_stream, div[id^='topnews_main_stream'], #pagelet_trending_tags_and_topics
+{
+	display: none !important;
+}
+
+div.ticker_stream
+{
+    display: none !important;
+}
